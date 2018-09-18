@@ -1,0 +1,63 @@
+<html><!-- Since 25 Oct 2012 -->
+<head>
+    <title>Vibed voices (Hysterical Literature audio remix toy)</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="PRAGMA" content="NO-CACHE">
+    <meta name="robots" content="INDEX,NOFOLLOW">
+    <meta name="keywords" content="orgasm, interactive orgasm, vibrator, moaning, girl, audio, interactive, interactive, game, toy, hysterical literature, Stoya, Alicia, Danielle, Stormy, Teresa, Sol&#233;, Amanda, оргазм, женский оргазм, вибратор, истерическая литература, интерактивная игра"/>
+    <meta name="description" content="Audio tribute to Hysterical Literature project"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { background: #000000; background-image: url('onair_bg0.png'); background-repeat: no-repeat; background-position: center; background-attachment: fixed }
+        html, body { height: 100%; }
+        img { border: 0 }
+        .main { min-height: 100%; width: 100%; text-align: center; }
+        * html .main { height: 100%; }
+        .hFooter { height: 24px; }
+        .footer { width: 100%; height: 24px; margin-top: -24px; }
+    </style>
+    <script type="text/javascript" src="vibed.js"></script>
+</head>
+<body id="bodyId" onload="init();">
+<div class="main">
+    <table cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+			<td><img src="bg_on.png" id="vibration" style="cursor:pointer;" alt="tension on/off" title="tension on/off" onmousedown="switchBg();"></td>
+			<td width="100%">&nbsp;</td>
+			<td><img src="swap_on.png" id="exchange" style="cursor:pointer;" alt="orgasm collision on/off" title="orgasm collision on/off" onmousedown="switchSwap();"></td>
+		</tr>
+	</table>
+    <!--iframe id="ifr0" src="player.html?Loop" style="width:0;height:0;border:0;" width="0" height="0"></iframe-->
+    <script>
+        for (var i = 0; i <= t; i++) {
+            document.write('<iframe id="ifr' + i + '" src="nothing.html" style="width:0;height:0;border:0;" width="0" height="0"></iframe>');
+        }
+    </script>
+    <script>
+        for (var i = 1; i <= t; i++) {
+            document.write('<img id="lady' + i + '" src="2' + i + '.png" style="position:absolute;visibility:hidden;" title="Force ' + names[i - 1] +
+                    '" alt="" onmousedown="return doClick(' + i + ', event);" onmousemove="doMouseMove(' + i + ', event);">');
+        }
+    </script>
+    <div class="hFooter"></div>
+</div>
+<div class="footer" id="foo">
+    <table cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td><img id="meditation" style="cursor:pointer;" src="meditation_off.png" alt=""
+                     title="Zen on/off" onclick="switchMagic();"></td>
+            <td width="100%">&nbsp;</td>
+            <td><a href="http://claytoncubitt.tumblr.com/tagged/hystericalliterature/chrono"
+                   target="_blank"><img src="question.png" alt="" title="Life breath"></a></td>
+        </tr>
+    </table>
+</div>
+    <script>
+        if (location.search.indexOf("magic") != -1) {
+          setTimeout(function() {switchMagic(); }, 500);
+        }
+    </script>
+</body></html>

@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /nothing
+Disallow: /player
+Host: vibrated.narod.ru

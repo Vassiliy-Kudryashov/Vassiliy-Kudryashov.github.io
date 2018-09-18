@@ -1,0 +1,7 @@
+<html>
+ <body>
+  <script type="text/javascript">
+   var name = location.search.substring(1);
+   document.write('<audio autoplay loop volume="'+(name.length > 2 ? .66 : .30)+'"><source src="'+name+'.mp3"></audio>');
+</script>
+</body></html>
